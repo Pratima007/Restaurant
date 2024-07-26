@@ -1,0 +1,12 @@
+Restaurant Management System Documentation
+
+1.Introduction
+The Restaurant Management System (RMS) is a web application developed using Django. It is designed to streamline restaurant operations, including managing reservations, menu items, orders, and staff. This documentation provides a comprehensive guide on how to use, configure, and extend the system.
+
+2.Create a folder named 'Restaurant'.
+3.Create a virtual environment after that make a app 'hotel' and project 'Second'.
+4.Make migration,
+    a)python manage.py makemigrations
+    b)python manage.py migrate
+5.Create a super class by python manage.py createsuperuser and run the server python manage.py runserver respectively.
+

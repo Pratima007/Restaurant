@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Restaurant</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    /* Create a container for the logo and navigation */
+    .header {
+      display: flex;
+      align-items: center; /* Vertically align logo and navigation */
+      padding: 0rem; /* Add some padding for aesthetics */
+    }
+
+    /* Style the logo image */
+    .logo {
+      width: 100px; /* Adjust width as needed */
+      height: auto; /* Maintain aspect ratio */
+      margin-right: 1rem; /* Add space between logo and navigation */
+    }
+    .item-img {
+      width: 70%; /* Adjust width as needed */
+      height: auto; /* Maintain aspect ratio */
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Style the navigation bar */
+    .nav {
+      flex-grow: 1; /* Make navigation bar fill remaining space */
+      justify-content: flex-end; /* Align navigation links to the right */
+    }
+
+    .intro {
+      text-align: center;
+      padding: 1rem 0;
+    }
+  </style>
+</head>
+
+<body>
+  {% load static %}
+
+  <header class="header">
+    <a href=""><img class="logo" src="{% static 'images/logo1.png' %}" alt="Our Restaurant Logo"></a>
+    <nav class="nav justify-content-end">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'menu' %}">Menu</a>
+      </li>
+    </nav>
+  </header>
+
+  <hr>
+
+  <div class="intro">
+    <h1>Welcome to Our Restaurant</h1>
+    <p>Experience the best dining experience with our delicious menu crafted by expert chefs using the freshest ingredients.</p>
+  </div>
+
+  <div class="container highlights">
+    <h2 class="text-center">Menu Highlights</h2>
+    <br>
+    <div class="row">
+      <div class="col-md-4 highlight-item text-center">
+        <a href=""><img class="item-img" src="{% static 'images/burger.jpg' %}" alt="Our Restaurant special"></a>
+        <h3>Signature Dish 1</h3>
+        <p>Our famous dish with a unique blend of spices and flavors.</p>
+      </div>
+
+      <div class="col-md-4 highlight-item text-center">
+        <a href=""><img class="item-img" src="{% static 'images/corndog.jpg' %}" alt="Our Restaurant special"></a>
+        <h3>Signature Dish 2</h3>
+        <p>A classic favorite that's sure to satisfy your taste buds.</p>
+      </div>
+
+      <div class="col-md-4 highlight-item text-center">
+        <a href=""><img class="item-img" src="{% static 'images/roti.jpg' %}" alt="Our Restaurant special"></a>
+        <h3>Signature Dish 3</h3>
+        <p>A delightful dessert to complete your meal.</p>
+      </div>
+    </div>
+  <div class="row">
+    <div class="col-md-4 highlight-item text-center">
+      <a href=""><img class="item-img" src="{% static 'images/veg momo.jpg' %}" alt="Our Restaurant special"></a>
+      <h3>Signature Dish 4</h3>
+      <p>Our famous dish with a unique blend of spices and flavors.</p>
+    </div>
+
+    <div class="col-md-4 highlight-item text-center">
+      <a href=""><img class="item-img" src="{% static 'images/spageti.jpg' %}" alt="Our Restaurant special"></a>
+      <h3>Signature Dish 5</h3>
+      <p>A classic favorite that's sure to satisfy your taste buds.</p>
+    </div>
+
+    <div class="col-md-4 highlight-item text-center">
+      <a href=""><img class="item-img" src="{% static 'images/steaks.jpg' %}" alt="Our Restaurant special"></a>
+      <h3>Signature Dish 6</h3>
+      <p>A delightful dessert to complete your meal.</p>
+    </div>
+  </div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+
+</html>
